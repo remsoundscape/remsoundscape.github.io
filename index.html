@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George | R.E.M. Sound Scape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title-bar">
+        <h1>REM SOUNDSCAPE</h1>
+        <p>An experiment with the final REM phase of sleep.</p>
+    </div>
+
+    <h2>Created by</h2>
+    <a href="https://7-george.github.io"><img id="logo" src="./Images/george.png"></a>
+    
+    <h2>Wake-Up Time</h2>
+    <h3 class="inset">
+        <input id="wakeup-hour" 
+        type="number" 
+        oninput="hourChange()">
+         : 
+        <input id="wakeup-mins" 
+        type="number" 
+        oninput="minsChange()">
+    </h3>
+ 
+    <h2>Final REM Stage Audio</h2>
+    <p id="warn">Timed to finish before wake-up</p>
+    <input id="rem-audio" oninput="audioChange()">
+    <p class="info">Paste YouTube link above.</p>
+    
+    <h2>Audio Duration</h2>
+    <p id="warn">How long do you want it to play for?</p>
+    <h3 class="inset">
+        <input id="audio-duration" 
+        type="number" 
+        oninput="durChange()">
+        Mins
+    </h3>
+
+    <h2>Final Steps</h2>
+    <div id="final-steps">
+        <p id="step-one" class="info">1) Go back to your YouTube link and ensure autoplay is disabled.</p>
+        <p class="info">2) Most devices will sleep while inactive, make sure to disable this.</p>
+        <p class="info">3) Click activate below and then turn off your screen / face device down.</p>
+    </div>
+
+    <div id="begin" onclick="begin()" class="center">
+        <a href="javascript:;">
+            <h1 id="activate">Activate</h1>
+        </a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
